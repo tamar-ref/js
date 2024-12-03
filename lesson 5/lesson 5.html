@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 5</title>
+    <script src="./cd_array.js"></script>
+    <script src="./lesson 5.js"></script>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+    <b>סינון לפי שם הדיסק</b><br>
+    <input type="text" id="name" onkeyup="SortByName()"><br><br>
+
+    <b>סינון לפי ארץ</b><br>
+    <select id="select" onchange="SortByCountry()"></select><br><br>
+
+    <b>סינון לפי שנת הוצאה לאור</b><br>
+    <input type="number" id="year1"><br>
+    <input type="number" id="year2"><br>
+    <button onclick="SortByYear()">סנן</button><br><br>
+
+    <table id="t"></table><br>
+
+    <b>הוספת מערך למוצר</b><br>
+    <label>title</label><br>
+    <input type="text" id="title"><br>
+    <label>artist</label><br>
+    <input type="text" id="artist"><br>
+    <label>country</label><br>
+    <input type="text" id="country"><br>
+    <label>company</label><br>
+    <input type="text" id="company"><br>
+    <label>price</label><br>
+    <input type="number" id="price"><br>
+    <label>year</label><br>
+    <input type="number" id="year"><br>
+    <button onclick="Add()">הוסף</button><br>
+    <p id="p5"></p><br>
+
+    <b>מחיקת מוצר מהמערך</b><br>
+    <label>id</label><br>
+    <input type="number" id="id"><br>
+    <button onclick="Remove()">הסר</button><br>
+
+</body>
+</html>
