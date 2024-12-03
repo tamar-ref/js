@@ -1,0 +1,39 @@
+@import './classes';
+//חלק א
+$font_size: 130%;
+$font_family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$all_color: cadetblue;
+body, button, a, li{
+    font-size: $font_size;
+    font-family: $font_family;
+    color: $all_color;
+    margin: 1%;
+    padding: 5px;
+}
+li{
+    a{
+        color: gray;
+        text-decoration: none;
+    }
+    button{
+        border-radius: 50%;
+        padding: 1%;
+        margin: 1%;
+        &:hover{
+            opacity: 40%;
+        }
+    }
+}
+.info{
+    @include text-info();
+    @extend .column-7;
+}
+.success{
+    @include text-success();
+}
+.danger{
+    @include text-danger();
+}
+.warning{
+    @include text-warning();
+}
