@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 8_2</title>
+</head>
+<body>
+    <p id="p"></p>
+    <input type="text" id="price" placeholder="price" onchange="ChangePrice()"><br>
+    <input type="text" id="calories" placeholder="calories" onblur="DeleteByCalories()"><br><br>
+    <form>
+        <select id="select">
+            <option value="info">information</option>
+            <option value="warning">warning</option>
+            <option value="error">error</option>
+        </select><br>
+        <input type="text" placeholder="כותרת" id="title"><br>
+        <input type="text" placeholder="הודעה" id="body"><br>
+        <input type="button" onclick="Add()" value="אישור">
+    </form>
+</body>
+<script src="./lesson 8_2.js"></script>
+</html>
